@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#container{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+.card{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow:  aqua;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(241, 241, 9);
+}
+.click{
+    margin-top: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px; 
+    background-color: rgb(9, 245, 29);
+
+}
+.click:hover{
+    background-color: rgb(250, 7, 19);
+    cursor: pointer;
+    box-shadow: 8px salmon;
+}
+.click:active{
+    outline: none;
+    border: none;
+}
+button:focus {outline:0;}
+#left{
+    margin-left: 200px;
+}
+#navbar{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid green;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray;
+    opacity: 0.3; */
+}
+#navbar>h2{
+color:black;
+font-weight: bold;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    z-index: -1;
+
+}
+div>h3{
+    text-align: center;
+    font-style: oblique;
+}
+.score-board{
+    border: 2px solid black;
+    margin: 50px auto;
+    width: 250px;
+    height: 100px;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+#user-score{
+margin: 40px auto;
+font-size: 20px;
+}
+#computer-score{
+    margin: 40px auto;
+    font-size: 20px;
+}
+#ss{
+    font-size: 20px;
+    color:  yellow;
+        display: block;
+    margin: 40px auto;
+    width: 33%;
+    text-align: center;
+    font-weight: bolder;
+}
+
