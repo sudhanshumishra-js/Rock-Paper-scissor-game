@@ -10,7 +10,7 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
-//game function for logic od winning losing  
+// game function for logic od winning losing  
 function game(userChoice) {
     const compChoice = computerChoice();
     const res = userChoice + compChoice;
@@ -22,7 +22,7 @@ function game(userChoice) {
     }
     else lose(userChoice, compChoice);
 }
-function win(userChoice, compChoice) {
+function win(userInput, compChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
@@ -39,7 +39,7 @@ function win(userChoice, compChoice) {
     document.getElementById(userInput).classList.add('win');
     setTimeout(function () { document.getElementById(userInput).classList.remove('win'); }, 350);
 }
-function lose(userChoice,compChoice)
+function lose(userInput,compChoice)
 {
     computerScore++;
     userScore_span.innerHTML = userScore;
@@ -56,7 +56,7 @@ function lose(userChoice,compChoice)
     document.getElementById(userInput).classList.add('lose');
     setTimeout(function () { document.getElementById(userInput).classList.remove('lose'); }, 350);
 }
-function draw(userChoice,compChoice)
+function draw(userInput,compChoice)
 {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
